@@ -6,12 +6,14 @@ class CustomCharacter:
         self.intelligence = intelligence
         self.luck = luck
         
-        
+    def set_special_ability(self, ability):
+        self.special_ability = ability
+    
     def display_info(self):
         return f"Name: {self._name}"
     
     def display_stats(self):
-        return f"Strength: {self.strength}\nAgility: {self.agility}\nIntelligence: {self.intelligence}\nLuck: {self.luck}"
+        print(f"Strength: {self.strength}\nAgility: {self.agility}\nIntelligence: {self.intelligence}\nLuck: {self.luck}")
     
     def add_strength(self, points):
         self.strength += points
