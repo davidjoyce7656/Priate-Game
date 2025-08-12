@@ -39,3 +39,8 @@ class CustomCharacter:
     def get_luck(self):
         return self.luck
     
+    def take_damage(self, damage):
+        self.health -= damage
+        print(f"{self._name} takes {damage} damage! Health left: {self.health}")
+        if self.health <= 0:
+            print(f"{self._name} has been defeated!")
