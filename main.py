@@ -1,8 +1,10 @@
 from characters import captainjack, firstmateanne, customcharacter
+from weapons import sword
     
 print("Pirate Adventure Game")
 
 def main():
+    swords = sword.Sword()
     maxAP_points = 10
     print("Welcome to the Pirate Adventure Game!")
     print("You are a brave pirate on a quest for treasure.")
