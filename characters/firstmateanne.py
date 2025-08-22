@@ -1,11 +1,12 @@
 class FirstMateAnne:
-    def __init__(self, strength=5, agility=6, intelligence=9, luck=7):
+    def __init__(self, strength=5, agility=6, intelligence=9, luck=7, health=100):
         self._name = "First Mate Anne"
         self._description = "A skilled navigator and loyal companion, known for her sharp wit and bravery."
         self.strength = strength
         self.agility = agility
         self.intelligence = intelligence
         self.luck = luck
+        self.health = health
         
     def name(self):
         return self._name

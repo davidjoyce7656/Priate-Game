@@ -1,10 +1,11 @@
 class CustomCharacter:
-    def __init__(self, _name, strength=5, agility=5, intelligence=5, luck=5):
+    def __init__(self, _name, strength=5, agility=5, intelligence=5, luck=5, health=100):
         self._name = _name
         self.strength = strength
         self.agility = agility
         self.intelligence = intelligence
         self.luck = luck
+        self.health = health
         
     def set_special_ability(self, ability):
         self.special_ability = ability

@@ -1,10 +1,9 @@
 from characters import captainjack, firstmateanne, customcharacter
-from weapons import sword
+from levels import level1
     
 print("Pirate Adventure Game")
 
 def main():
-    swords = sword.Sword()
     maxAP_points = 10
     print("Welcome to the Pirate Adventure Game!")
     print("You are a brave pirate on a quest for treasure.")
@@ -191,6 +190,8 @@ def main():
     play = input()
 
     print("\nYour adventure begins now!")
+
+    level1.first_level(character)
 
 if __name__ == "__main__":
     main()

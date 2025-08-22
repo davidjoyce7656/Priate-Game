@@ -1,5 +1,5 @@
 class CaptainJack:
-    def __init__(self, strength=6, agility=8, intelligence=7, luck=9, health=100):
+    def __init__(self, strength=6, agility=8, intelligence=7, luck=9, health=100, energy=100):
         self._name = "Captain Jack"
         self._description = "Captain Jack is a legendary pirate known for his daring escapades and unmatched skill in navigation. With his trusty sword and a heart full of courage, he leads his crew through treacherous waters in pursuit of the greatest treasures the world has to offer."
         self.strength = strength
@@ -7,6 +7,8 @@ class CaptainJack:
         self.intelligence = intelligence
         self.luck = luck
         self.health = health
+        self.energy = energy
+        self.inventory = []
 
     def name(self):
         return self._name
@@ -37,3 +39,15 @@ class CaptainJack:
         print(f"{self._name} takes {damage} damage! Health left: {self.health}")
         if self.health <= 0:
             print(f"{self._name} has been defeated!")
+            
+    def add_item_to_inventory(self, item):
+        self.inventory.append(item)
+        print(f"{item.name} has been added to {self._name}'s inventory.")
+        
+    def show_inventory(self):
+        if not self.inventory:
+            print(f"{self._name}'s inventory is empty.")
+        else:
+            print(f"{self._name}'s Inventory:")
+            for item in self.inventory:
+                print(f"- {item.name} (Type: {item.type})")

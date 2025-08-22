@@ -1,11 +1,12 @@
 import random
 
 class Sword:
-    def __init__(self, name="Cutlass", damage=25):
+    def __init__(self, name="Cutlass", damage=25, type="Weapon"):
         self.name = name
         self.damage = damage
         self.durability = 100
         self.description = "A sharp sword, perfect for slicing through enemies."
+        self.type = type
 
     def attack(self):
         actual_damage = random.randint(int(self.damage * 0.8), int(self.damage * 1.2))
