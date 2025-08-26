@@ -3,9 +3,10 @@ class Compass:
     A simple Compass item for the Pirate Game.
     """
 
-    def __init__(self, name="Compass", direction="North"):
+    def __init__(self, name="Compass", direction="North", type="Tool"):
         self.name = name
         self.direction = direction
+        self.type = type
 
     def set_direction(self, direction):
         """

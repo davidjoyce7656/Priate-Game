@@ -1,6 +1,7 @@
 class Apple:
-    def __init__(self, name="Apple", health_boost=10, energy_boost=5):
+    def __init__(self, name="Apple", health_boost=10, energy_boost=5, type="Food"):
         self.name = name
+        self.type = type
         self.health_boost = health_boost
         self.energy_boost = energy_boost
 
